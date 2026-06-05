@@ -42,7 +42,7 @@ export default function VideoHero() {
 
   const socialLinks = [
     { label: "LinkedIn", href: "https://www.linkedin.com/in/rohitnagineni/" },
-    { label: "GitHub", href: "https://github.com/nrohit2499" },
+    { label: "GitHub", href: "https://github.com/rohitnag99" },
     { label: "Email", href: "mailto:nrohit2499@gmail.com" },
   ];
 
