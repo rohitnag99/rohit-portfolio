@@ -1,0 +1,219 @@
+body {
+  margin: 0;
+  background: #050505;
+  color: #f5f5f5;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+.portfolio {
+  background: #050505;
+  min-height: 100vh;
+}
+
+.navbar {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  padding: 24px 50px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  z-index: 100;
+  background: rgba(5, 5, 5, 0.75);
+  backdrop-filter: blur(16px);
+  box-sizing: border-box;
+}
+
+.logo {
+  font-weight: 800;
+  letter-spacing: 2px;
+}
+
+.navLinks {
+  display: flex;
+  gap: 28px;
+  font-size: 14px;
+}
+
+.emailBtn {
+  border: 1px solid #555;
+  padding: 10px 18px;
+  border-radius: 999px;
+}
+
+.hero {
+  min-height: 100vh;
+  display: grid;
+  grid-template-columns: 1.1fr 0.9fr;
+  align-items: center;
+  padding: 120px 60px 60px;
+  gap: 40px;
+}
+
+.eyebrow,
+.smallTitle {
+  color: #a3a3a3;
+  text-transform: uppercase;
+  letter-spacing: 3px;
+  font-size: 13px;
+}
+
+.hero h1 {
+  font-size: clamp(70px, 12vw, 160px);
+  line-height: 0.9;
+  margin: 20px 0;
+  letter-spacing: -6px;
+}
+
+.subtitle {
+  color: #cfcfcf;
+  font-size: 22px;
+}
+
+.heroButtons {
+  display: flex;
+  gap: 16px;
+  margin-top: 32px;
+}
+
+.heroButtons a {
+  background: white;
+  color: black;
+  padding: 14px 22px;
+  border-radius: 999px;
+  font-weight: 700;
+}
+
+.heroVideo video {
+  width: 100%;
+  border-radius: 30px;
+  border: 1px solid #333;
+  box-shadow: 0 0 60px rgba(255,255,255,0.08);
+}
+
+.intro,
+.section,
+.contact {
+  padding: 100px 60px;
+  max-width: 1200px;
+  margin: auto;
+}
+
+.intro h2,
+.section h2,
+.contact h2 {
+  font-size: clamp(40px, 6vw, 90px);
+  line-height: 1;
+  letter-spacing: -3px;
+  margin: 10px 0 30px;
+}
+
+.intro p,
+.projectCard p {
+  color: #bdbdbd;
+  font-size: 18px;
+  line-height: 1.7;
+}
+
+.stats {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  border-top: 1px solid #222;
+  border-bottom: 1px solid #222;
+}
+
+.stats div {
+  padding: 50px;
+  border-right: 1px solid #222;
+}
+
+.stats h3 {
+  font-size: 56px;
+  margin: 0;
+}
+
+.stats p {
+  color: #aaa;
+}
+
+.skills {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 14px;
+}
+
+.skills span {
+  border: 1px solid #333;
+  padding: 14px 22px;
+  border-radius: 999px;
+  background: #111;
+}
+
+.projects {
+  display: grid;
+  gap: 24px;
+}
+
+.projectCard {
+  padding: 35px;
+  border: 1px solid #252525;
+  border-radius: 28px;
+  background: linear-gradient(135deg, #111, #080808);
+}
+
+.projectCard span {
+  color: #777;
+  font-size: 14px;
+}
+
+.projectCard h3 {
+  font-size: 34px;
+  margin: 15px 0;
+}
+
+.contact {
+  min-height: 70vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.contact a {
+  font-size: 24px;
+  color: #fff;
+  text-decoration: underline;
+}
+
+@media (max-width: 900px) {
+  .navbar {
+    padding: 20px;
+  }
+
+  .navLinks {
+    display: none;
+  }
+
+  .hero {
+    grid-template-columns: 1fr;
+    padding: 120px 24px 50px;
+  }
+
+  .hero h1 {
+    letter-spacing: -3px;
+  }
+
+  .intro,
+  .section,
+  .contact {
+    padding: 70px 24px;
+  }
+
+  .stats {
+    grid-template-columns: 1fr;
+  }
+}
